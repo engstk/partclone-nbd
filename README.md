@@ -13,6 +13,9 @@ Github).
  $ cmake ..
  $ make
  # make install
+
+ # Optional: Create deb package
+ $ cpack -G DEB --config CPackConfig.cmake
 ```
 
 ## Usage

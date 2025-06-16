@@ -8,6 +8,10 @@ set( CMAKE_C_STANDARD 99 )
 ## Set our project name
 project(${PROJECT_NAME})
 
+set(PROJECT_VERSION_MAJOR "0")
+set(PROJECT_VERSION_MINOR "0")
+set(PROJECT_VERSION_PATCH "4")
+
 ## Use all the *.cpp files we found under this folder for the project
 FILE(GLOB SRCS "src/*.c")
 
@@ -26,3 +30,6 @@ target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Werror)
 
 ## install rules
 install (TARGETS partclone-nbd DESTINATION bin)
+
+set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}")
+include(Packaging)
