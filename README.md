@@ -9,7 +9,8 @@ Github).
 
 ## Compilation and installation
 ```
- $ cmake CMakeLists.txt
+ $ mkdir build
+ $ cmake ..
  $ make
  # make install
 ```

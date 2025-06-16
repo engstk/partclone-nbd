@@ -1,3 +1,4 @@
+/build*/*
 partclone-nbd
 partclone-nbd.log
 CMakeCache.txt
